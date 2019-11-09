@@ -20,7 +20,7 @@
 <div style="width: 100%;align-items: center">
     <div style="max-width: 2000px">
         {{--site navigation bar--}}
-        <div style="width: 96%;padding: 0 2%;">this is navigation</div>
+        <div style="width: 96%;padding: 0 2%;height: 46px;background-color: #636b6f">this is navigation</div>
 
         {{--site body--}}
         @yield('content')

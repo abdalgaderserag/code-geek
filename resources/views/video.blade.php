@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-    <div style="width: 92%;display: flex;padding: 0 4%">
+    <div style="width: 92%;display: flex;padding: 0 4%;background-color: pink">
         {{--should be solid to the page view--}}
-        <div style="width: 63%;position: fixed">
-            <div style="width: 100%">
+        <div style="width: 63%;position: fixed;background-color: blue">
+            <div style="width: 100%;background-color: darkcyan">
                 <div style="width: 96%;padding: 0 2%">
                     <h1>first video !</h1>
                 </div>
                 <div style="width: 96%;padding: 0 2%">
-                    <video id="on-video" style="width: 96%;padding: 2%" src=""></video>
+                    <video id="on-video" style="width: 100%;" src=""></video>
                 </div>
             </div>
             <div style="width: 100%">
@@ -21,11 +21,11 @@
         </div>
 
         {{--scrollable by the page view--}}
-        <div style="width: 30%;margin-left: 70%">
+        <div style="width: 30%;margin-left: 70%;background-color: #F98835">
 
             {{--loop throw this template for all the series/course videos!--}}
             <div style="display: flex;">
-                <div style="width: 50%">
+                <div style="width: 50%;background-color: red">
                     <img src="" alt="">
                 </div>
                 <div style="width: 50%">
@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div style="display: flex;">
-                <div style="width: 50%">
+                <div style="width: 50%;background-color: red">
                     <img src="" alt="">
                 </div>
                 <div style="width: 50%">
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div style="display: flex;">
-                <div style="width: 50%">
+                <div style="width: 50%;background-color: red">
                     <img src="" alt="">
                 </div>
                 <div style="width: 50%">
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div style="display: flex;">
-                <div style="width: 50%">
+                <div style="width: 50%;background-color: red">
                     <img src="" alt="">
                 </div>
                 <div style="width: 50%">
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div style="display: flex;">
-                <div style="width: 50%">
+                <div style="width: 50%;background-color: red">
                     <img src="" alt="">
                 </div>
                 <div style="width: 50%">
@@ -75,7 +75,7 @@
                 </div>
             </div>
             <div style="display: flex;">
-                <div style="width: 50%">
+                <div style="width: 50%;background-color: red">
                     <img src="" alt="">
                 </div>
                 <div style="width: 50%">
@@ -85,7 +85,17 @@
                 </div>
             </div>
             <div style="display: flex;">
+                <div style="width: 50%;background-color: red">
+                    <img src="" alt="">
+                </div>
                 <div style="width: 50%">
+                    <h2>second video !</h2>
+                    <h4>details about the second video</h4>
+                    <span>second video long</span>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div style="width: 50%;background-color: red">
                     <img src="" alt="">
                 </div>
                 <div style="width: 50%">
