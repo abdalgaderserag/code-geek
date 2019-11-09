@@ -15,12 +15,12 @@
 <!-- Styles -->
     {{--<link href="{{ asset('css/app.css') }}" rel="stylesheet">--}}
 </head>
-<body>
+<body style="margin: 0">
 
 <div style="width: 100%;align-items: center">
     <div style="max-width: 2000px">
         {{--site navigation bar--}}
-        <div style="width: 96%;padding: 0 2%;"></div>
+        <div style="width: 96%;padding: 0 2%;">this is navigation</div>
 
         {{--site body--}}
         @yield('content')
