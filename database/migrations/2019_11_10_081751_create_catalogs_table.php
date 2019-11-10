@@ -15,6 +15,12 @@ class CreateCatalogsTable extends Migration
     {
         Schema::create('catalogs', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('kind');
+            $table->integer('type');
+            $table->integer('first_catalog');
+            $table->integer('second_catalog');
+            $table->boolean('playlist')->default(false);
+            $table->bigInteger('playlist_id')->nullable();
             $table->timestamps();
         });
     }
