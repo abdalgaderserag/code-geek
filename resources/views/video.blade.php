@@ -3,13 +3,13 @@
 @section('content')
     <div style="width: 92%;display: flex;padding: 0 4%;background-color: pink">
         {{--should be solid to the page view--}}
-        <div style="width: 63%;position: fixed;background-color: blue">
+        <div style="width: 63%;position: fixed;margin-top: 46px;background-color: blue">
             <div style="width: 100%;background-color: darkcyan">
                 <div style="width: 96%;padding: 0 2%">
                     <h1>first video !</h1>
                 </div>
                 <div style="width: 96%;padding: 0 2%">
-                    <video id="on-video" style="width: 100%;" src=""></video>
+                    <video id="on-video" style="width: 100%;" src="/css/mi.mp4" controls></video>
                 </div>
             </div>
             <div style="width: 100%">
