@@ -14,10 +14,9 @@ use Illuminate\Http\Request;
 */
 
 
-
+Route::post('files/uploader', 'Files\UploadController');
 
 //Route::middleware('auth:api')->group(function () {
-
 
 
 //});

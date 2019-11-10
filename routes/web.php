@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('video');
 });
+
+Route::post('files/downloader', 'Files\DownloadController');

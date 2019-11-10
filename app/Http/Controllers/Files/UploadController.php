@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers\Files;
 
 use Faker\Provider\Uuid;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
 
 class UploadController extends Controller
 {
@@ -22,16 +23,22 @@ class UploadController extends Controller
         list($file_type, $type) = explode('/', $type);
 
         if ($file_type == "video") {
+
             if ($code == "base64") {
                 $data = base64_decode($data);
-            } else
+            } else {
                 return response()->json('unknown encode', 800);
+            }
 
-            $path = 'storage/' . $file_type . '/' . Uuid::uuid() . '.' . $type;
+            $path = $file_type . '/' . Uuid::uuid() . '.' . $type;
 
-        } else
+        } else {
+
             return response()->json('unknown file type', 800);
+        }
 
-        return response()->json(['path' => $path, 'type' => $file_type], 200);
+        Storage::disk('local')->put($path, $data);
+
+        return response()->json(['path' => $path], 200);
     }
 }
