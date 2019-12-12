@@ -10,8 +10,18 @@ body {
   font-size: 14pt;
 }
 
+h1{
+  margin: 0;
+}
+h2{
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
 #app {
   display: flex;
+  overflow: hidden;
   min-height: -webkit-fill-available;
 
   #left-section {
@@ -36,7 +46,6 @@ body {
     height: inherit;
     width: $mainSide;
     padding: 48px $gPad $gPad 4%;
-
     #main {
       width: 75%;
       .notification {
@@ -55,7 +64,7 @@ body {
 }
 
 .card {
-  width: 96%;
+  width: 97%;
   padding: 8px 14px;
   border-radius: 3px;
   margin: 12px 0;
@@ -65,5 +74,4 @@ body {
 .card:hover{
   box-shadow: 0 3px 5px rgba(74, 70, 70, 0.39), 0 3px 12px rgba(74, 70, 70, 0.26);
   transition: 180ms ease-in;
-  cursor: pointer;
 }

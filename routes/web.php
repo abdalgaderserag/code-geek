@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('video');
 });
 
 Route::post('files/downloader', 'Files\DownloadController');

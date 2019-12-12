@@ -1,0 +1,19 @@
+@import "variables";
+
+.video{
+  width: 100%;
+  background-color: $menuSide;
+  border-radius: 12pt;
+}
+
+.video-details{
+  background-color: darken($bgColor,4);
+  border-radius: 24px;
+  display: flex;
+  border: 1px solid lighten($menuSide,60);
+  .video-avatar{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+}
