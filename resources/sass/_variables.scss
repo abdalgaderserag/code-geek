@@ -1,0 +1,16 @@
+// Colors
+$menuSide: #251b2f;
+$menuSideLighter: lighten($menuSide, 8);
+$bgColor: #f0ecef;
+$fontColor: mix($menuSide, $bgColor, 92);
+$fontColorLighter: lighten($fontColor, 8);
+
+// Grids
+$leftSide: 18%;
+$mainSide: 82%;
+$gPad: 12px;
+$navSize: 42px;
+
+// Fonts
+$main: 'Calibri';
+$title: '';

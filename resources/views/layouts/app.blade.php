@@ -13,24 +13,25 @@
 {{--<script src="{{ asset('js/app.js') }}" defer></script>--}}
 
 <!-- Styles -->
-    {{--<link href="{{ asset('css/app.css') }}" rel="stylesheet">--}}
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body style="margin: 0">
-
-<div style="width: 100%;align-items: center">
-    <div style="max-width: 2000px">
-        {{--site navigation bar--}}
-        <div style="width: 96%;padding: 0 2%;height: 46px;position: fixed;background-color: #636b6f">this is navigation</div>
-
-        {{--site body--}}
-        @yield('content')
-
-        {{--site footer--}}
-        <div style="width: 96%;padding: 0 2%;margin-top: 126px;background-color: gray;">
-            <br><br><br><br>
+<body>
+<div id="app">
+    <div id="left-section">
+        <div id="nav-bar"></div>
+        <div id="main-menu"></div>
+    </div>
+    <div id="main-section">
+        <div id="main">
+            <div class="notification card">
+                this is an example of a notification that pops up front some times in case some thing happen
+                example of a notification that pops up front some times in case some thing happen.
+            </div>
+            <div class="container">
+                @yield('content')
+            </div>
         </div>
     </div>
 </div>
-
 </body>
 </html>
