@@ -22,17 +22,7 @@
         <div id="nav-bar"></div>
         <div id="main-menu"></div>
     </div>
-    <div id="main-section">
-        <div id="main">
-            <div class="notification card">
-                this is an example of a notification that pops up front some times in case some thing happen
-                example of a notification that pops up front some times in case some thing happen.
-            </div>
-            <div class="container">
-                @yield('content')
-            </div>
-        </div>
-    </div>
+    @yield('content')
 </div>
 </body>
 @yield('script')

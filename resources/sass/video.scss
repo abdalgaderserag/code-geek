@@ -1,19 +1,45 @@
 @import "variables";
 
-.video{
+.video {
   width: 100%;
   background-color: $menuSide;
   border-radius: 12pt;
 }
 
-.video-details{
-  background-color: darken($bgColor,4);
-  border-radius: 24px;
+.video-details {
+  background-color: darken($bgColor, 4);
+  border-radius: 12pt;
   display: flex;
-  border: 1px solid lighten($menuSide,60);
-  .video-avatar{
+  border: 1px solid lighten($menuSide, 60);
+
+  .video-avatar {
     width: 64px;
     height: 64px;
     border-radius: 50%;
   }
+
+  .details-text {
+    padding: 4px 6px 0 10px;
+    display: flex;
+
+
+    .video-icons{
+
+    }
+  }
+}
+
+.creator-info {
+  h2 {
+  }
+
+  span {
+    color: $fontColorLighter;
+  }
+}
+
+.gray-text{
+  font-weight: 100;
+  font-size: 13pt;
+  color: lighten($menuSide,40);
 }
