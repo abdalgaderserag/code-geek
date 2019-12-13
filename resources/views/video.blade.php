@@ -3,6 +3,11 @@
 @section('content')
     <div id="main-section">
         <div id="main">
+            <div id="search-section">
+                <img src="search.svg">
+                <input type="search" name="search" id="search">
+                <div>Filters</div>
+            </div>
             <div class="notification card">
                 this is an example of a notification that pops up front some times in case some thing happen
                 example of a notification that pops up front some times in case some thing happen.
@@ -37,6 +42,9 @@
         </div>
 
         <div id="slide">
+            <div style="height: 46px;margin-bottom: 16px">
+
+            </div>
             <div class="video-card">
                 <img src="ink.png" onclick="navigateVideo('#')">
                 <div class="creator-info">

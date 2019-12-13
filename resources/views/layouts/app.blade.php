@@ -19,7 +19,10 @@
 <body>
 <div id="app">
     <div id="left-section">
-        <div id="nav-bar"></div>
+        <div id="nav-bar">
+            <img src="avatar.png">
+            <span>Steve Johnson</span>
+        </div>
         <div id="main-menu"></div>
     </div>
     @yield('content')
