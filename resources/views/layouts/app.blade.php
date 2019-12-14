@@ -21,12 +21,37 @@
     <div id="left-section">
         <div id="nav-bar">
             <img src="avatar.png">
-            <span>Steve Johnson</span>
+            <div>
+                <span>Steve Johnson</span><br>
+                <span>@steve.johnson</span>
+            </div>
         </div>
-        <div id="main-menu"></div>
+        <div id="main-menu">
+            <div class="menu-tabs">
+                <div>Dashboard</div>
+                <div>Courses</div>
+                <div>My List</div>
+                <div>Teachers</div>
+                <div>Progress</div>
+                <div>Payment</div>
+                <div>Profile</div>
+                <div>Notifications</div>
+                <div>QA</div>
+                <div>Support</div>
+                <div>FAQ</div>
+                <div>Contact</div>
+            </div>
+            <hr style="border-width: 0">
+            <div style="color: #a2a1a1;font-size: 10pt;padding-left: 8%">Created with
+                <img src="hart.svg" id="heart">
+                by <a href="http://abdalgaderserag.github.io"
+                      class="link-clear">Gadora</a></div>
+        </div>
     </div>
     <div id="main-section">
         <div id="main">
+
+            {{--search section--}}
             <div id="search-section">
                 {{--<img src="search.svg">--}}
                 <input type="search" name="search" id="search">
@@ -46,6 +71,8 @@
                     </div>
                 </div>
             </div>
+
+            {{--notifications pop-ups--}}
             <div class="notification card">
                 this is an example of a notification that pops up front some times in case some thing happen
                 example of a notification that pops up front some times in case some thing happen.

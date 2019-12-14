@@ -79,7 +79,7 @@
         function displayFilters() {
             if (fill) {
                 document.getElementById('filter-buttons').style.display = 'flex';
-                document.getElementById('filters').style.marginLeft = '0px';
+                document.getElementById('filters').style.marginLeft = '2px';
                 document.getElementById('filter-arrow').style.transform = 'rotate(180deg)';
             } else {
                 document.getElementById('filter-buttons').style.display = 'none';

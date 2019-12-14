@@ -28,6 +28,8 @@ h2 {
     background-color: $menuSide;
     height: inherit;
     width: $leftSide;
+    min-width: 220px;
+    max-width: 274px;
     //position: fixed;
 
     #nav-bar {
@@ -38,23 +40,44 @@ h2 {
 
       img {
         border-radius: 50%;
-        width: 64px;
-        height: 64px;
-        margin-top: 14px;
+        min-width: 64px;
+        max-width: 64px;
+        min-height: 64px;
+        max-height: 64px;
         border: 6px solid #251b2f;
       }
 
-      span {
-        color: $bgColor;
-        padding: 20px 0 0 2px;
-        text-transform: uppercase;
-        font-weight: 400;
+      div {
+        width: 72%;
+
+        span {
+          color: darken($bgColor, 20);
+          padding: 0 0 0 8px;
+          font-size: 12pt;
+        }
+
+        :first-child {
+          color: $bgColor;
+          padding: 20px 0 0 2px;
+          font-weight: 400;
+        }
       }
     }
 
     #main-menu {
       height: inherit;
       padding: $gPad;
+
+      .menu-tabs {
+        width: 100%;
+        margin-top: 18px;
+        color: #f0ecef;
+        padding-left: 10%;
+
+        div {
+          margin-top: 4px;
+        }
+      }
     }
   }
 
@@ -90,21 +113,21 @@ h2 {
           box-shadow: 0 1px 2px #7272729e;
         }
 
-          #filters {
-            cursor: pointer;
-            display: flex;
-            font-weight: 900;
-            user-select: none;
-            height: 32px;
-            width: 6%;
-            margin-top: 6px;
-            background-color: white;
-            padding: 8px 4% 0 0;
-            margin-left: 4px;
-            box-shadow: 0 1px 2px #7272729e;
-            border-top-right-radius: 12pt;
-            border-bottom-right-radius: 12pt;
-          }
+        #filters {
+          cursor: pointer;
+          display: flex;
+          font-weight: 900;
+          user-select: none;
+          height: 32px;
+          width: 6%;
+          margin-top: 6px;
+          background-color: white;
+          padding: 8px 4% 0 0;
+          margin-left: 4px;
+          box-shadow: 0 1px 2px #7272729e;
+          border-top-right-radius: 12pt;
+          border-bottom-right-radius: 12pt;
+        }
       }
 
       .notification {
@@ -135,13 +158,8 @@ hr {
 }
 
 .link-clear {
-  color: initial;
+  color: inherit;
   text-decoration: none;
-}
-
-.link-clear:hover {
-  color: $menuSideLighter;
-  text-decoration: underline;
 }
 
 .card {
@@ -160,4 +178,25 @@ hr {
 .arrow-bottom {
   position: relative;
   transform: rotate(-90deg);
+}
+
+#heart {
+  width: 14px;
+  animation-name: fade-in;
+  animation-duration: 1200ms;
+  animation-iteration-count: infinite;
+  margin: 0 2px;
+}
+
+@keyframes fade-in {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
