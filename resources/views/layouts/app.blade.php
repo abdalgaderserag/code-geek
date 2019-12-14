@@ -55,12 +55,11 @@
             <div id="search-section">
                 {{--<img src="search.svg">--}}
                 <input type="search" name="search" id="search">
-                <div id="filter-buttons"
-                     style="display: none;width: 46%;height: 40px;margin-top: 6px;justify-content: space-between">
+                <div id="filter-buttons">
                     <div>people</div>
-                    <div>people</div>
-                    <div>people</div>
-                    <div>people</div>
+                    <div>Courses</div>
+                    <div>Teachers</div>
+                    <div>Videos</div>
                 </div>
                 <div onclick="displayFilters()" id="filters">
                     <div>

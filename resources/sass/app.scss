@@ -111,9 +111,35 @@ h2 {
           padding: 8px 2%;
           width: 44%;
           box-shadow: 0 1px 2px #7272729e;
+          transition: all ,400ms;
+        }
+
+        #filter-buttons {
+          display: none;
+          width: 46%;
+          height: 40px;
+          margin-top: 6px;
+          justify-content: space-evenly;
+
+          div {
+            height: 28px;
+            width: 80%;
+            margin: 6px 2.5%;
+            text-align: center;
+            border-radius: 12pt;
+            cursor: pointer;
+            user-select: none;
+            padding: 2px 0 0 0;
+          }
+
+          div:hover{
+            background-color: $menuSideLighter;
+            color: $bgColor;
+          }
         }
 
         #filters {
+          transition: all ,400ms;
           cursor: pointer;
           display: flex;
           font-weight: 900;

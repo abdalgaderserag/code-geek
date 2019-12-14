@@ -78,12 +78,20 @@
 
         function displayFilters() {
             if (fill) {
-                document.getElementById('filter-buttons').style.display = 'flex';
                 document.getElementById('filters').style.marginLeft = '2px';
                 document.getElementById('filter-arrow').style.transform = 'rotate(180deg)';
+                document.getElementById('filters').style.borderRadius = '12pt';
+                document.getElementById('filters').style.marginLeft = '46%';
+                document.getElementById('search').style.borderRadius = '12pt';
+                setTimeout(function () {
+                    document.getElementById('filter-buttons').style.display = 'flex';
+                    document.getElementById('filters').style.marginLeft = '';
+                },400);
             } else {
                 document.getElementById('filter-buttons').style.display = 'none';
                 document.getElementById('filters').style.marginLeft = '';
+                document.getElementById('filters').style.borderRadius = '';
+                document.getElementById('search').style.borderRadius = '';
                 document.getElementById('filter-arrow').style.transform = '';
             }
             fill = !fill;
