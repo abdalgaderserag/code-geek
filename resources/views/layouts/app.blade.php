@@ -25,7 +25,41 @@
         </div>
         <div id="main-menu"></div>
     </div>
-    @yield('content')
+    <div id="main-section">
+        <div id="main">
+            <div id="search-section">
+                {{--<img src="search.svg">--}}
+                <input type="search" name="search" id="search">
+                <div id="filter-buttons"
+                     style="display: none;width: 46%;height: 40px;margin-top: 6px;justify-content: space-between">
+                    <div>people</div>
+                    <div>people</div>
+                    <div>people</div>
+                    <div>people</div>
+                </div>
+                <div onclick="displayFilters()" id="filters">
+                    <div>
+                        <img id="filter-arrow" src="arrow.svg">
+                    </div>
+                    <div>
+                        Filters
+                    </div>
+                </div>
+            </div>
+            <div class="notification card">
+                this is an example of a notification that pops up front some times in case some thing happen
+                example of a notification that pops up front some times in case some thing happen.
+            </div>
+            @yield('content')
+        </div>
+
+        <div id="slide">
+            <div style="height: 46px;margin-bottom: 16px">
+
+            </div>
+            @yield('slide')
+        </div>
+    </div>
 </div>
 </body>
 @yield('script')
