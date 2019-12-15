@@ -42,7 +42,7 @@
                 <div>Contact</div>
             </div>
             <hr style="border-width: 0">
-            <div style="color: #a2a1a1;font-size: 10pt;padding-left: 8%">Created with
+            <div style="color: #a2a1a1;font-size: 10pt;padding-left: 8%;margin-top: 46%">Created with
                 <img src="hart.svg" id="heart">
                 by <a href="http://abdalgaderserag.github.io"
                       class="link-clear">Gadora</a></div>
@@ -56,10 +56,10 @@
                 {{--<img src="search.svg">--}}
                 <input type="search" name="search" id="search">
                 <div id="filter-buttons">
-                    <div>people</div>
-                    <div>Courses</div>
-                    <div>Teachers</div>
-                    <div>Videos</div>
+                    <div onclick="filtersVals[0]=!filtersVals[0]">people</div>
+                    <div onclick="filtersVals[1]=!filtersVals[1]">Courses</div>
+                    <div onclick="filtersVals[2]=!filtersVals[2]">Teachers</div>
+                    <div onclick="filtersVals[3]=!filtersVals[3]">Videos</div>
                 </div>
                 <div onclick="displayFilters()" id="filters">
                     <div>

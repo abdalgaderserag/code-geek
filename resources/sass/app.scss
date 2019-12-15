@@ -103,8 +103,8 @@ h2 {
         }
 
         #search {
-          border-top-left-radius: 12pt;
-          border-bottom-left-radius: 12pt;
+          border-top-left-radius: $roundedCorners;
+          border-bottom-left-radius: $roundedCorners;
           border: none;
           margin: 6px 0 0 0;
           font-size: 12pt;
@@ -126,13 +126,13 @@ h2 {
             width: 80%;
             margin: 6px 2.5%;
             text-align: center;
-            border-radius: 12pt;
+            border-radius: $roundedCorners;
             cursor: pointer;
             user-select: none;
             padding: 2px 0 0 0;
           }
 
-          div:hover{
+          .active{
             background-color: $menuSideLighter;
             color: $bgColor;
           }
@@ -151,8 +151,8 @@ h2 {
           padding: 8px 4% 0 0;
           margin-left: 4px;
           box-shadow: 0 1px 2px #7272729e;
-          border-top-right-radius: 12pt;
-          border-bottom-right-radius: 12pt;
+          border-top-right-radius: $roundedCorners;
+          border-bottom-right-radius: $roundedCorners;
         }
       }
 
@@ -191,7 +191,7 @@ hr {
 .card {
   width: 97%;
   padding: 8px 14px;
-  border-radius: 12pt;
+  border-radius: $roundedCorners;
   margin: 12px 0;
   //box-shadow: 0 2px 3px rgba(74, 70, 70, 0.28);
 }

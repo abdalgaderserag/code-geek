@@ -51,6 +51,7 @@
         var mainSection = document.getElementById('main-section');
         var video = document.getElementsByClassName('video')[0];
         var fill = true;
+        var filtersVals = [false, false, false, false];
 
         //functions FOR THE RESIZE
         function gridsPositions() {
@@ -76,6 +77,31 @@
         } catch (e) {
         }
 
+        document.getElementById('filter-buttons').addEventListener('click', function (event) {
+            var parent = event.target.parentElement;
+            for (var i = 0; i < filtersVals.length; i++) {
+                if (filtersVals[i]) {
+                    parent.children[i].className = 'active';
+                } else {
+                    parent.children[i].className = '';
+                }
+            }
+            rewriteHash();
+        });
+
+        function rewriteHash() {
+            hash = '#';
+            for (var i = 0; i < filtersVals.length; i++) {
+                if (filtersVals[i]) {
+                    switch (i) {
+                        case 0:
+                            hash = hash + 'people' + '&';
+                            break;
+                    }
+                }
+            }
+        }
+
         function displayFilters() {
             if (fill) {
                 document.getElementById('filters').style.marginLeft = '2px';
@@ -86,7 +112,7 @@
                 setTimeout(function () {
                     document.getElementById('filter-buttons').style.display = 'flex';
                     document.getElementById('filters').style.marginLeft = '';
-                },400);
+                }, 400);
             } else {
                 document.getElementById('filter-buttons').style.display = 'none';
                 document.getElementById('filters').style.marginLeft = '';
