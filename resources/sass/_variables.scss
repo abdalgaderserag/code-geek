@@ -1,15 +1,18 @@
 // Colors
 $menuSide: #251b2f;
+// #3E117B
 $menuSideLighter: lighten($menuSide, 8);
 $bgColor: #f0ecef;
 $fontColor: mix($menuSide, $bgColor, 92);
 $fontColorLighter: lighten($fontColor, 8);
+$white: white;
+$green: #47BB9A;
 
 // Grids
 $leftSide: 18%;
 $mainSide: 82%;
 $gPad: 12px;
-$navSize: 42px;
+$navSize: 62px;
 $roundedCorners: 12pt;
 
 // Fonts

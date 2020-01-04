@@ -21,28 +21,41 @@
     <div id="left-section">
         <div id="nav-bar">
             <img src="avatar.png">
-            <div>
-                <span>Steve Johnson</span><br>
-                <span>@steve.johnson</span>
-            </div>
         </div>
         <div id="main-menu">
-            <div class="menu-tabs">
-                <div>Dashboard</div>
-                <div>Courses</div>
-                <div>My List</div>
-                <div>Teachers</div>
-                <div>Progress</div>
-                <div>Payment</div>
-                <div>Profile</div>
-                <div>Notifications</div>
-                <div>QA</div>
-                <div>Support</div>
-                <div>FAQ</div>
-                <div>Contact</div>
+            <div id="name">John Legend</div>
+            <div class="tabs-list">
+                <div class="tab">
+                    <img src="arrow-w.svg">
+                    <span>Dashboard</span>
+                </div>
+                <div class="tab active-tab">
+                    <img src="arrow-w.svg">
+                    <span>Courses</span>
+                </div>
+                <div class="tab">
+                    <img src="arrow-w.svg">
+                    <span>My List</span>
+                </div>
+                <div class="tab">
+                    <img src="arrow-w.svg">
+                    <span>Teachers</span>
+                </div>
+                <div class="tab">
+                    <img src="arrow-w.svg">
+                    <span>Payment</span>
+                </div>
+                <div class="tab">
+                    <img src="arrow-w.svg">
+                    <span>Q.A</span>
+                </div>
+                <div class="tab">
+                    <img src="arrow-w.svg">
+                    <span>Contact</span>
+                </div>
             </div>
-            <hr style="border-width: 0">
-            <div style="color: #a2a1a1;font-size: 10pt;padding-left: 8%;margin-top: 46%">Created with
+            {{--<hr style="border-width: 0">--}}
+            <div style="color: #a2a1a1;font-size: 10pt;padding-left: 16%;margin-top: 20%">Created with
                 <img src="hart.svg" id="heart">
                 by <a href="http://abdalgaderserag.github.io"
                       class="link-clear">Gadora</a></div>
@@ -80,7 +93,7 @@
         </div>
 
         <div id="slide">
-            <div style="height: 46px;margin-bottom: 16px">
+            <div style="height: 46px;margin-bottom: 20px">
 
             </div>
             @yield('slide')
