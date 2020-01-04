@@ -54,11 +54,11 @@
                     <span>Contact</span>
                 </div>
             </div>
-            {{--<hr style="border-width: 0">--}}
             <div style="color: #a2a1a1;font-size: 10pt;padding-left: 16%;margin-top: 20%">Created with
                 <img src="hart.svg" id="heart">
-                by <a href="http://abdalgaderserag.github.io"
-                      class="link-clear">Gadora</a></div>
+                by
+                <a href="http://abdalgaderserag.github.io" class="link-clear">Gadora</a>
+            </div>
         </div>
     </div>
     <div id="main-section">

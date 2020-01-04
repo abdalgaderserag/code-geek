@@ -80,7 +80,8 @@ h2 {
 
                 .active-tab {
                     border-left: 8px solid $green;
-                    padding-left: $gPad/2;
+                    padding-left: $gPad/4;
+                    margin-left: 16px;
                     background-color: $menuSideLighter;
                 }
             }
