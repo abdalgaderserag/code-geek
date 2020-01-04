@@ -11,10 +11,18 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\User::class, 5)->create()->each(function ($u) {
+        factory(App\Teacher::class, 5)->create()->each(function ($t) {
             $seriesCount = 5;
-            foreach ($seriesCount as $count) {
-
+            for ($i = 0; $i < $seriesCount; $i++) {
+                $series = factory(App\Series::class)->make();
+                $series->teacher_id = $t->id;
+                $series->save();
+                $videosCount = 8;
+                for ($j = 0; $j < $videosCount; $j++) {
+                    $video = factory(App\Video::class)->make();
+                    $video->series_id = $series->id;
+                    $video->save();
+                }
             }
         });
     }

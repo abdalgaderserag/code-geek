@@ -6,6 +6,6 @@ $factory->define(App\Video::class, function (Faker $faker) {
     return [
         'title' => $faker->name,
         'link' => $faker->freeEmail,
-        'about' => $faker->paragraphs(2,true),
+        'description' => $faker->paragraphs(2,true),
     ];
 });
