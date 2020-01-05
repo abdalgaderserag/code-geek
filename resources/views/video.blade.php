@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="container">
-        <div class="video">
-
+        <div class="video" style="display: flex;justify-content: center">
+            <img src="images/PLAY.svg" style="width: 14%;cursor: pointer;">
         </div>
         <div style="padding: 12px 16px 0 16px;font-weight: 400">
             <span>XP<span class="gray-text">300</span></span>
