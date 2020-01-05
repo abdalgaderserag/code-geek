@@ -37,10 +37,7 @@ class VideosController extends Controller
         $video->series_id = $series->id;
         $video->save();
 //        TODO :: add to the observer
-        if ($series->videos()->count() > config('series.count')){
-            $series->publish = true;
-            $series->save();
-        }
+
         return response()->json($video);
     }
 
